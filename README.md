@@ -8,7 +8,9 @@ Asp.net on the backend and React on frontend. It is dockerized. It was set up on
 To run it:
 
 removes any instances
+
 docker-compose down --volumes --remove-orphans
 
 run the project
+
 docker-compose up --build
