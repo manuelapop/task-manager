@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./TaskManager.Backend
+    ports:
+      - "5035:5035"
+    volumes:
+      - backend-data:/app
+    environment:
+      - ASPNETCORE_URLS=http://+:5035
+
+  frontend:
+    build: ./task-manager-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  backend-data:
+
+
+      
