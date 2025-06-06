@@ -3,7 +3,7 @@
 
 This is a task Manager project that will add a task and update the status either complete or pending.
 
-Asp.net on the backend and React on frontend. It is dockerized.
+Asp.net on the backend and React on frontend. It is dockerized. It was set up on a Mac computer.
 
 To run it:
 
